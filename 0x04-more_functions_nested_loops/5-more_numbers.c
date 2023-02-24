@@ -1,24 +1,22 @@
-#include "main.h"
-/**
- * more_numbers - prints the numbers
- *
- */
+le File  20 lines (18 sloc)  270 Bytes
 
+#include "main.h"
+
+/**
+ * * more_numbers -> printing more numbers
+ */
 void more_numbers(void)
 {
-int i;
-int h;
+	int x, y;
 
-for (h = 0; h <= 9; h++)
-{
-for (i = 0; i <= 14; i++)
-{
-if (i > 9)
-{
-_putchar(i / 10 + '0');
-}
-_putchar(i % 10 + '0');
-}
-_putchar('\n');
-}
-}
+	for (x = 0; x < 10; x++)
+	{
+		for (y = 0; y < 15; y++)
+		{
+			if (y >= 10)
+				_putchar((y / 10) + '0');
+			_putchar((y % 10) + '0');
+		}
+		_putchar('\n');
+	}
+}}
